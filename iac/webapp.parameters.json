@@ -8,9 +8,6 @@
       "hostingPlanName": {
         "value": "superusers-api-service-2020-hardware"
       },
-      "appInsightsLocation": {
-        "value": "northeurope"
-      },
       "sku": {
         "value": "S1"
       }

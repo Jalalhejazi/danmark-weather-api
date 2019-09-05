@@ -1,7 +1,7 @@
 {
-  "name": "danmark-weather-api",
+  "name": "superusers-api-service-2020",
   "version": "1.0.5",
-  "description": "danmark-weather-api",
+  "description": "superusers-api-service-2020",
   "private": true,
   "main": "./bin/www",
   "engines": {

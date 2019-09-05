@@ -1,0 +1,43 @@
+{
+  "name": "danmark-weather-api",
+  "version": "0.0.1",
+  "description": "danmark-weather-api",
+  "private": true,
+  "main": "./bin/www",
+  "engines": {
+    "node": ">=10.10.0"
+  },
+  "scripts": {
+    "start": "node ./bin/www",
+    "version-production": "npm view ./package.json version",
+    "version-fix": "npm version patch",
+    "version-feature": "npm version minor",
+    "version-broken": "npm version major",
+    "version-git": "npm version from-git --allow-same-version",
+    "validation": "yamllint ./azure-pipelines.yml",
+    "predeploy": "npm run validation",
+    "deploy": "powershell -NoProfile -ExecutionPolicy Unrestricted -Command  ./deploy.ps1 fix",
+    "deploy-feature": "powershell -NoProfile -ExecutionPolicy Unrestricted -Command  ./deploy.ps1 feature ",
+    "deploy-broken": "powershell -NoProfile -ExecutionPolicy Unrestricted -Command  ./deploy.ps1 broken ",
+    "devops-init": "powershell -NoProfile -ExecutionPolicy Unrestricted -Command  ./devops.ps1"
+  },
+  "dependencies": {
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "express": "~4.16.1",
+    "hbs": "~4.0.4",
+    "http-errors": "~1.6.3",
+    "morgan": "~1.9.1",
+    "node-fetch": "^2.6.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.2",
+    "yaml-lint": "^1.2.4"
+  },
+  "author": "Jalal Hejazi <jalal.hejazi@gmail.com>",
+  "license": "ISC",
+  "directories": {
+    "lib": "lib"
+  },
+  "keywords": []
+}

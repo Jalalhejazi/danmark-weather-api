@@ -1,6 +1,6 @@
 {
   "name": "danmark-weather-api",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "danmark-weather-api",
   "private": true,
   "main": "./bin/www",

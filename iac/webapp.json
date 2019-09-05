@@ -47,21 +47,15 @@
                 "siteConfig": {
                     "appSettings": [
                         {
-                            "name": "APPINSIGHTS_INSTRUMENTATIONKEY",
-                            "value": "[reference(resourceId('microsoft.insights/components/', parameters('webAppName')), '2015-05-01').InstrumentationKey]"
-                        },
-                        {
                             "name": "WEBSITE_NODE_DEFAULT_VERSION",
                             "value": "10.0.0"
                         }
-                    ],
-                    "phpVersion": "7.1"
+                    ]
                 },
                 "serverFarmId": "[concat('/subscriptions/', subscription().subscriptionId,'/resourcegroups/', resourceGroup().name, '/providers/Microsoft.Web/serverfarms/', parameters('hostingPlanName'))]"
             },
             "dependsOn": [
-                "[concat('Microsoft.Web/serverfarms/', parameters('hostingPlanName'))]",
-                "[resourceId('microsoft.insights/components/', parameters('webAppName'))]"
+                "[concat('Microsoft.Web/serverfarms/', parameters('hostingPlanName'))]"
             ]
         },
         {

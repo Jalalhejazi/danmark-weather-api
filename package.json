@@ -1,8 +1,8 @@
 {
   "name": "superusers-api-service-2020",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "superusers-api-service-2020",
-  "private": true,
+  "private": "public",
   "main": "./bin/www",
   "engines": {
     "node": ">=10.10.0"
@@ -36,9 +36,9 @@
     "yaml-lint": "^1.2.4"
   },
   "author": "Jalal Hejazi <jalal.hejazi@gmail.com>",
-  "license": "ISC",
+  "license": "MIT",
   "directories": {
     "lib": "lib"
   },
-  "keywords": []
+  "keywords": ["API", "automation"]
 }

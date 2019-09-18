@@ -7,4 +7,11 @@ router.get('/', (req, res, next) => {
   vejret( data =>  res.json(data) )
 });
 
+
+router.get('/about', (req, res, next) => {
+  res.send("Hello from repo")
+});
+
+
+
 module.exports = router;

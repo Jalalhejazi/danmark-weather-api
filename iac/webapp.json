@@ -16,7 +16,7 @@
         },
         "sku": {
             "type": "string",
-            "defaultValue": "Standard S1",
+            "defaultValue": "Basic B1",
             "metadata":{  
                 "description":"The pricing tier of your app service plan"
             }

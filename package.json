@@ -1,6 +1,6 @@
 {
   "name": "superusers-api-service-2020",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "superusers-api-service-2020",
   "private": "public",
   "main": "./bin/www",

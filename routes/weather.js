@@ -1,7 +1,6 @@
 var express = require('express');
 var router = express.Router();
 var source = require('../lib/weather');
-var fetch  = require('node-fetch')
 
 router.get('/', (req, res, next) => {
   source.weather( data =>  res.json(data) )

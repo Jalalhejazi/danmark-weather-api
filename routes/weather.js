@@ -1,17 +1,17 @@
 var express = require('express');
 var router = express.Router();
-var vejret      = require('../lib/weather');
-
+var source = require('../lib/weather');
+var fetch  = require('node-fetch')
 
 router.get('/', (req, res, next) => {
-  vejret( data =>  res.json(data) )
+  source.weather( data =>  res.json(data) )
 });
 
 
-router.get('/about', (req, res, next) => {
-  res.send("Hello from repo")
+router.get('/:city', (req, res, next) => {
+  const city = req.params.city || 'copenhagen'
+  source.weather_by_city(city , data =>  res.json(data) )
 });
-
 
 
 module.exports = router;

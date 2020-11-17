@@ -6,6 +6,16 @@ router.get('/', (req, res, next) => {
   source.weather( data =>  res.json(data) )
 });
 
+router.get('/v2', (req, res, next) => {
+  (async () => {
+
+    let data = await source.weather_odense()
+    res.json(data)
+
+  })();
+
+})
+
 
 router.get('/:city', (req, res, next) => {
   const city = req.params.city || 'copenhagen'

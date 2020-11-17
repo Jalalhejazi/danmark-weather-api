@@ -9,6 +9,7 @@
   },
   "scripts": {
     "start": "node ./bin/www",
+    "dev": "pm2 start ./bin/www --name superusers-api-service-2020",
     "version-production": "npm view ./package.json version",
     "version-fix": "npm version patch",
     "version-feature": "npm version minor",

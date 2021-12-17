@@ -23,7 +23,7 @@
     "devops-init": "powershell -NoProfile -ExecutionPolicy Unrestricted -Command  ./devops.ps1"
   },
   "dependencies": {
-    "cookie-parser": "~1.4.4",
+    "cookie-parser": "~1.4.6",
     "cors": "^2.8.5",
     "debug": "~2.6.9",
     "express": "~4.16.1",
